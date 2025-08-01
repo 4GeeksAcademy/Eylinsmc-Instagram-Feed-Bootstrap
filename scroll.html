@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Instagram Photo Feed con Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- VERIFICAR-->
+    <link href="./index.html" rel="html">
+    <!-- END VERIFICAR -->
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <header>
+        <!-- Start nav-->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid mx-5">
+                <div class="d-flex justify-content-center align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <a class="navbar-brand">Instagram</a>
+                </div>
+                <div class="d-flex">
+
+                    <!-- Start Modal -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success me-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Caption:
+
+                                    <!-- TEXTAREA -->
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Add the caption of your post here"
+                                            id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Add the caption of your post here</label>
+                                    </div>
+                                    <!-- TEXTAREA-->
+
+                                    <!-- BUTTON - ICONS -->
+                                    <button type="button" class="btn btn-outline-secondary my-3 me-1"> <i
+                                            class="fa-solid fa-camera"></i> </button>
+                                    <button type="button" class="btn btn-outline-secondary"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                    <!-- END BUTTON - ICONS -->
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal-->
+
+                    <!-- start button-->
+
+
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle me-5" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- End button-->
+                </div>
+            </div>
+        </nav>
+        <!-- End nav-->
+    </header>
+
+    <main>
+        <!-- FEED-->
+        <ul class="nav nav-tabs justify-content-center border border-0">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" aria-current="page" href="./index.html"><i
+                        class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="./scroll.html"><i class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+        <!-- END FEED-->
+
+
+        <!-- START SCROLL-->
+        <div class="scroll-part">
+            <div class="card px-0 container col-5 my-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex gap-5 px-2">
+                        <h5 class="card-title">Big Ben y el puente de Westminster</h5>
+                        <p class="date">date</p>
+                    </div>
+                    <img src="./images/big-ben-y-el-puente-de-westminster-al-atardecer-londres-reino-unido.jpg"
+                        class="card-img-top rounded-0" alt="Big Ben y el puente de Westminster">
+                    <p class="card-text px-2"><strong>20,062 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+            <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Flores para San Valentin</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/hermoso-concepto-floral-del-dia-de-san-valentin.jpg" class="card-img-top rounded-0"
+                        alt="Flores para San Valentin">
+                    <p class="card-text px-2"><strong>5,628 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Brownie con helado</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/alto-angulo-de-pastel-con-menta-y-cobertura.jpg" class="card-img-top rounded-0"
+                        alt="Brownie con helado">
+                    <p class="card-text px-2"><strong>2,363 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">#44 de Lewis Hamilton</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/44.jpg" class="card-img-top rounded-0" alt="#44 de Lewis Hamilton">
+                    <p class="card-text px-2"><strong>100,824 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Labrador Retriever feliz</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/labrador-retriever-de-chocolate-feliz-con-un-cuello-azul-claro.jpg"
+                        class="card-img-top rounded-0" alt="Labrador Retriever feliz">
+                    <p class="card-text px-2"><strong>30,521 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Colinas de Italia</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/hermosa-foto-de-colinas-cubiertas-de-hierba-cubiertas-de-arboles-cerca-de-las-montanas-en-dolomitas-italia.jpg"
+                        class="card-img-top rounded-0" alt="Colinas de Italia">
+                    <p class="card-text px-2"><strong>10,262 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Lista para el viaje</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/mujer-sonriente-posando-en-su-equipaje.jpg" class="card-img-top rounded-0"
+                        alt="Chica lista para viajar">
+                    <p class="card-text px-2"><strong>20,289 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Cool vibe</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/vista-frontal-del-concepto-de-perro-lindo-divertido.jpg" class="card-img-top rounded-0"
+                        alt="Perro adorable con gafas rosadas">
+                    <p class="card-text px-2"><strong>34,562 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+
+            <div class="card px-0 container col-5 mb-3">
+                <div class="card-body px-0 py-2">
+                    <div class="title-1 d-flex px-2">
+                        <h5 class="card-title">Gaming Station</h5>
+                        <p>date</p>
+                    </div>
+                    <img src="./images/vista-superior-manos-sosteniendo-el-controlador.jpg" class="card-img-top rounded-0"
+                        alt="Gaming Station">
+                    <p class="card-text px-2"><strong>20,562 likes</strong></p>
+                    <p class="card-text px-2"><class="text-body-dark">Last updated 3 mins ago</p>
+                </div>
+            </div>
+        </div>
+        <!-- END SCROLL -->
+    </main>
+
+</body>
